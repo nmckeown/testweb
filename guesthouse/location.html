@@ -1,6 +1,6 @@
 <!--
-  @title:   index.html 
-  @desc:    The index page for the galway bay guesthouse website	 
+  @title:   location.html 
+  @desc:    The location page for the galway bay guesthouse website	 
   @author:  Noel McKeown 
   @email:   10361631@mydbs.ie
   @date:    Nov-2017		
@@ -23,18 +23,31 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     
     <!-- meta info -->
-    <meta name="description" content="Galway Bay GuestHouse is Luxurious Bed & Breakfast(B&B) in Galway.">
+    <meta name="description" content="Galway Bay GuestHouse is Luxurious Bed & Breakfast(B&B). This page contains our location.">
     <meta name="author" content="Noel_McKeown_DBS">
     
     <!-- include css -->
-    <link type="text/css" rel="stylesheet" href="./resources/css/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="../resources/css/stylesheet.css">
 	
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="./resources/img/favicon-32x32.png" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="./resources/img/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="../resources/img/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="../resources/img/favicon-16x16.png" sizes="16x16"/>
 	
 	<!-- include javascript -->
-	<script type="text/javascript" src="./resources/js/gbg_scripts.min.js"></script>
+	<script type="text/javascript" src="../resources/js/gbg_scripts.min.js"></script>
+    
+    <!-- google map API -->
+    <script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqdZKv6H55MfLyK5G6vrfO7d-fO1PcbRs&callback=initMap">
+    </script>
+	
+	<!-- call initMap when loaded -->
+	<script>
+		// onload event
+		window.onload = function (){
+			initMap()
+		}
+	</script>
     
 </head>
 
@@ -45,7 +58,7 @@
         
 		<!-- header text and logo -->
 		<span>
-			<img alt="Galway Bay Logo" src="./resources/img/hooker.png">
+			<img alt="Galway Bay Logo" src="../resources/img/hooker.png">
 		</span>
 
 		<!-- main heading -->
@@ -53,11 +66,12 @@
 
 		<!-- tripadvisor cert logos -->
 		<span>
-			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate1" alt="tripadvisor 2016 certificate" src="./resources/img/tripadvisor2016.png"></a>
+			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate1" alt="tripadvisor 2016 certificate" src="../resources/img/tripadvisor2016.png"></a>
 		</span>
 		<span>
-			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate2" alt="tripadvisor 2015 certificate" src="./resources/img/tripadvisor2015.png"></a>
+			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate2" alt="tripadvisor 2015 certificate" src="../resources/img/tripadvisor2015.png"></a>
 		</span>
+		
 		
     </div>
     
@@ -66,16 +80,16 @@
         <nav>
             <ul>
                 <!-- navbar buttons -->
-                <li><a href="./index.html">Home</a></li>
-				<li><a href="./rooms/accomodation.html">Accomodation</a></li>
-				<li><a href="./guesthouse/services.html">Services</a></li>
-				<li><a href="./tours/about_galway.html">About Galway</a></li>
-				<li><a href="./tours/attractions.html">Attractions</a></li>
-				<li><a href="./tours/tour_bookings.html">Tour Bookings</a></li>
+                <li><a href="../index.html">Home</a></li>
+				<li><a href="../rooms/accomodation.html">Accomodation</a></li>
+				<li><a href="../guesthouse/services.html">Services</a></li>
+				<li><a href="../tours/about_galway.html">About Galway</a></li>
+				<li><a href="../tours/attractions.html">Attractions</a></li>
+				<li><a href="../tours/tour_bookings.html">Tour Bookings</a></li>
 			</ul>
 		</nav>  
     </div>
-    
+	
     <!-- sidebar -->
     <div class="sideleft sideleft-reservation">
 		<h2>Reservation</h2>
@@ -98,15 +112,14 @@
 					<!--  number of persons/rooms  -->
 					<div class="field">Persons: &nbsp;<input type="text" value="1"/>&nbsp; &nbsp; &nbsp; &nbsp; Rooms:&nbsp; <input type="text" value="1"/>
 					</div>
-									
-					<!-- submit reservation -->
-					<div class="reserve"><a href="./rooms/reservation.html" onclick="document.getElementById('reservation-form').submit()">Reserve</a>
-					</div>
 					
+					<!-- submit reservation -->
+					<div class="reserve"><a href="../rooms/reservation.html" onclick="document.getElementById('reservation-form').submit()">Reserve</a>
+					</div>
+						
 				</fieldset>
 			</form>
 		</section>
-		
     </div>
     
     <!-- sidebar -->
@@ -129,28 +142,16 @@
     <!-- main -->
     <div class="main">
         
-        <h1>Welcome</h1>
-        
-        <!-- welcome paragraph -->
-		<section>
-                            
-            <p>
-            Gillian Moore's unique Bed & Breakfast is located in Galway city on the west coast of Ireland.</br>
-            This is a family run B&B, in operation for over twenty years and offers spectacular views over Galway Bay.</br>
-            </p>
-            
-		</section>
-        
-		<!-- images -->
+		<h1>Location</h1>
+	
+        <!-- contact section -->
 		<section>
             
-            <span>
-                <img alt="guesthouse room picture" src="./resources/img/room2.jpg" class="roompics">
-            </span>
-            <span>
-                <img alt="guesthouse towel picture" src="./resources/img/towels.jpg" class="roompics">
-            </span>
-            
+			<p>We are located just off ladies beach in Galway bay.  The B&B is 50 miles / 80 Km from Shannon airport and about a 2-hour drive from Dublin airport. </p>
+	    
+			<!-- google map -->   
+			<div id="map"></div>
+	    
 		</section>
         
     </div>
@@ -159,11 +160,11 @@
         <ul>
             <!-- footer buttons -->
             <li><a href="https://www.tripadvisor.ie/" target="_blank">tripadvisor</a></li>
-			<li><a href="./rooms/reservation.html">Reservation</a></li>
-            <li><a href="./guesthouse/testimonials.html">Testimonials</a></li>
-            <li><a href="./guesthouse/location.html">Location</a></li>
-			<li><a href="./sitemap.html">Sitemap</a></li>
-            <li><a href="./guesthouse/contact_us.html">Contact Us</a></li>
+			<li><a href="../rooms/reservation.html">Reservation</a></li>
+            <li><a href="../guesthouse/testimonials.html">Testimonials</a></li>
+            <li><a href="../guesthouse/location.html">Location</a></li>
+			<li><a href="../sitemap.html">Sitemap</a></li>
+            <li><a href="../guesthouse/contact_us.html">Contact Us</a></li>
         </ul>
         
 		<!-- copyright -->

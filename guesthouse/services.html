@@ -1,0 +1,179 @@
+<!--
+  @title:   services.html 
+  @desc:    The services page for the galway bay guesthouse website	 
+  @author:  Noel McKeown 
+  @email:   10361631@mydbs.ie
+  @date:    Nov-2017		
+-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- charset -->
+    <meta charset="utf-8">
+	
+    <!-- make client responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- page title -->
+    <title>Galway Bay GuestHouse - Bed And Breakfast</title>
+	
+	<!-- support IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    
+    <!-- meta info -->
+    <meta name="description" content="Galway Bay GuestHouse is Luxurious Bed & Breakfast(B&B). This page lists our services.">
+    <meta name="author" content="Noel_McKeown_DBS">
+    
+    <!-- include css -->
+    <link type="text/css" rel="stylesheet" href="../resources/css/stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="../resources/css/ionicons.css">
+	
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../resources/img/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="../resources/img/favicon-16x16.png" sizes="16x16"/>
+	
+	<!-- include javascript -->
+	<script type="text/javascript" src="../resources/js/gbg_scripts.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <!-- header -->
+    <div id="header">
+        
+		<!-- header text and logo -->
+		<span>
+			<img alt="Galway Bay Logo" src="../resources/img/hooker.png">
+		</span>
+
+		<!-- main heading -->
+		<h3>Galway Bay Guesthouse</h3>
+
+		<!-- tripadvisor cert logos -->
+		<span>
+			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate1" alt="tripadvisor 2016 certificate" src="../resources/img/tripadvisor2016.png"></a>
+		</span>
+		<span>
+			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate2" alt="tripadvisor 2015 certificate" src="../resources/img/tripadvisor2015.png"></a>
+		</span>
+		
+		
+    </div>
+    
+    <!-- navbar -->
+    <div id="navbar">
+        <nav>
+            <ul>
+                <!-- navbar buttons -->
+                <li><a href="../index.html">Home</a></li>
+				<li><a href="../rooms/accomodation.html">Accomodation</a></li>
+				<li><a href="../guesthouse/services.html">Services</a></li>
+				<li><a href="../tours/about_galway.html">About Galway</a></li>
+				<li><a href="../tours/attractions.html">Attractions</a></li>
+				<li><a href="../tours/tour_bookings.html">Tour Bookings</a></li>
+			</ul>
+		</nav>  
+    </div>
+    
+    <!-- sidebar -->
+    <div class="sideleft sideleft-reservation">
+		<h2>Reservation</h2>
+		
+		<!-- reservation form -->
+		<section>
+			<form action="" id="reservation-form">
+				<fieldset>
+					
+					<!--  check in  -->
+					<div class="field"><label>Check In:</label>
+						<input type="date" name="checkin">
+					</div>
+					
+					<!--  check out  -->
+					<div class="field"><label>Check Out:</label>
+						<input type="date" name="checkout">
+					</div>
+					
+					<!--  number of persons/rooms  -->
+					<div class="field">Persons: &nbsp;<input type="text" value="1"/>&nbsp; &nbsp; &nbsp; &nbsp; Rooms:&nbsp; <input type="text" value="1"/>
+					</div>
+					
+					<!-- submit reservation -->
+					<div class="reserve"><a href="../rooms/reservation.html" onclick="document.getElementById('reservation-form').submit()">Reserve</a>
+					</div>
+						
+				</fieldset>
+			</form>
+		</section>
+    </div>
+    
+    <!-- sidebar -->
+    <div class="sideleft sideleft-services">
+        <h2>Room Services</h2>
+		<nav>
+            <ul>
+                <li>Private Bathroom</li>
+                <li>Bathtub</li>
+                <li>Walk-in Shower</li>
+                <li>Cloths Pressing</li>
+                <li>Hair Dryer</li>
+                <li>Large TV</li>
+                <li>Tea/Coffee</li>
+                <li>WiFi</li>
+            </ul>
+		</nav>
+    </div>
+    
+    <!-- main -->
+    <div class="main">
+        
+		<h1>Services</h1>
+	
+        <!-- services section -->
+		<section>
+            
+			<p>
+			All rooms in the B&B offer the following to its guests: luxuriously furnished, non-smoking, own private bathrooms with full size baths, separate walk-in tropical rain showers, walnut wooden floors, central heating, iron and ironing board, hair dryer, all with 32" to 40" flat T.V. and tea/coffee making facilities. Full breakfast, free 24 hour wireless broadband Internet access throughout, free private off street car park and all taxes are included in rate.
+			</p>
+			
+			<p>
+			Facilities nearby to the B&B include: Eyre Square Shopping Centre, two sandy beaches, spectacular coastal walks, a variety of restaurants within walking distance, friendly traditional Irish music pubs, horse-riding, golfing, fishing, and a variety of water sports. Bikes are available for hire.
+			</p>
+			
+			<!-- services as logos -->
+			<ul style="list-style: none;">
+                <li><i class="ion-wifi" style="font-size: 24px;margin-right:9.7em;">&nbsp;WiFi</i><i class="ion-printer" style="font-size: 24px">&nbsp;Print Facilites</i></li>
+                <li><i class="ion-card" style="font-size: 24px;margin-right:6.1em;">&nbsp;Credit Card</i><i class="ion-earth" style="font-size: 24px">&nbsp;Internet</i></li>
+                <li><i class="ion-locked" style="font-size: 24px;margin-right:4.7em;">&nbsp;Safety Deposit</i><i class="ion-coffee" style="font-size: 24px">&nbsp;Coffee Facilities</i></li>
+                <li><i class="ion-ios-telephone" style="font-size: 24px;margin-right:5.2em;">&nbsp;Room Phones</i><i class="ion-ios-musical-notes" style="font-size: 24px">&nbsp;Theatre Nearby</i></li>
+				<li><i class="ion-ios-pint" style="font-size: 24px;margin-right:6.6em;">&nbsp;&nbsp;Local Pubs</i><i class="ion-ios-film" style="font-size: 24px">&nbsp;Cinema Nearby</i></li>
+				<li><i class="ion-android-restaurant" style="font-size: 24px;margin-right:2.9em;">&nbsp;Local Restaurants</i><i class="ion-android-boat" style="font-size: 24px">&nbsp;Ferry Service</i></li>
+				<li><i class="ion-android-subway" style="font-size: 24px;margin-right:5em;">&nbsp;Rail Proximity</i><i class="ion-plane" style="font-size: 24px">&nbsp;Airport Transfer</i></li>
+            </ul>
+			
+		</section>
+        
+    </div>
+    
+    <div id="footer">
+        <ul>
+            <!-- footer buttons -->
+            <li><a href="https://www.tripadvisor.ie/" target="_blank">tripadvisor</a></li>
+			<li><a href="../rooms/reservation.html">Reservation</a></li>
+            <li><a href="../guesthouse/testimonials.html">Testimonials</a></li>
+            <li><a href="../guesthouse/location.html">Location</a></li>
+			<li><a href="../sitemap.html">Sitemap</a></li>
+            <li><a href="../guesthouse/contact_us.html">Contact Us</a></li>
+        </ul>
+        
+		<!-- copyright -->
+        </br>Copyright &copy; Galway Bay Guesthouse 2017 - All Rights Reserved</br>Noel McKeown LTD
+       
+    </div>
+
+</body>
+
+</html>

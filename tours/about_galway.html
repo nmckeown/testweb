@@ -1,0 +1,176 @@
+<!--
+  @title:   about_galway.html 
+  @desc:    The about galway page for the galway bay guesthouse website	 
+  @author:  Noel McKeown 
+  @email:   10361631@mydbs.ie
+  @date:    Nov-2017		
+-->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- charset -->
+    <meta charset="utf-8">
+	
+    <!-- make client responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- page title -->
+    <title>Galway Bay GuestHouse - Bed And Breakfast</title>
+	
+	<!-- support IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    
+    <!-- meta info -->
+    <meta name="description" content="Galway Bay GuestHouse is Luxurious Bed & Breakfast(B&B). This page is about Galway.">
+    <meta name="author" content="Noel_McKeown_DBS">
+    
+    <!-- include css -->
+    <link type="text/css" rel="stylesheet" href="../resources/css/stylesheet.css">
+	
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../resources/img/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="../resources/img/favicon-16x16.png" sizes="16x16"/>
+	
+	<!-- include javascript -->
+	<script type="text/javascript" src="../resources/js/gbg_scripts.min.js"></script>
+    
+</head>
+
+<body>
+    
+    <!-- header -->
+    <div id="header">
+        
+		<!-- header text and logo -->
+		<span>
+			<img alt="Galway Bay Logo" src="../resources/img/hooker.png">
+		</span>
+
+		<!-- main heading -->
+		<h3>Galway Bay Guesthouse</h3>
+
+		<!-- tripadvisor cert logos -->
+		<span>
+			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate1" alt="tripadvisor 2016 certificate" src="../resources/img/tripadvisor2016.png"></a>
+		</span>
+		<span>
+			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate2" alt="tripadvisor 2015 certificate" src="../resources/img/tripadvisor2015.png"></a>
+		</span>
+		
+		
+    </div>
+    
+    <!-- navbar -->
+    <div id="navbar">
+        <nav>
+            <ul>
+                <!-- navbar buttons -->
+                <li><a href="../index.html">Home</a></li>
+				<li><a href="../rooms/accomodation.html">Accomodation</a></li>
+				<li><a href="../guesthouse/services.html">Services</a></li>
+				<li><a href="../tours/about_galway.html">About Galway</a></li>
+				<li><a href="../tours/attractions.html">Attractions</a></li>
+				<li><a href="../tours/tour_bookings.html">Tour Bookings</a></li>
+			</ul>
+		</nav>  
+    </div>
+    
+    <!-- sidebar -->
+    <div class="sideleft sideleft-reservation">
+        <h2>Reservation</h2>
+		
+		<!-- reservation form -->
+		<section>
+			<form action="" id="reservation-form">
+				<fieldset>
+					
+					<!--  check in  -->
+					<div class="field"><label>Check In:</label>
+						<input type="date" name="checkin">
+					</div>
+					
+					<!--  check out  -->
+					<div class="field"><label>Check Out:</label>
+						<input type="date" name="checkout">
+					</div>
+					
+					<!--  number of persons/rooms  -->
+					<div class="field">Persons: &nbsp;<input type="text" value="1"/>&nbsp; &nbsp; &nbsp; &nbsp; Rooms:&nbsp; <input type="text" value="1"/>
+					</div>
+					
+					<!-- submit reservation -->
+					<div class="reserve"><a href="../rooms/reservation.html" onclick="document.getElementById('reservation-form').submit()">Reserve</a>
+					</div>
+						
+				</fieldset>
+			</form>
+		</section>
+    </div>
+    
+    <!-- sidebar -->
+    <div class="sideleft sideleft-services">
+        <h2>Room Services</h2>
+		<nav>
+            <ul>
+                <li>Private Bathroom</li>
+                <li>Bathtub</li>
+                <li>Walk-in Shower</li>
+                <li>Cloths Pressing</li>
+                <li>Hair Dryer</li>
+                <li>Large TV</li>
+                <li>Tea/Coffee</li>
+                <li>WiFi</li>
+            </ul>
+		</nav>
+    </div>
+    
+    <!-- main -->
+    <div class="main">
+	
+		<h1>About Galway</h1>
+			
+		<!-- about galway section -->
+		<section>
+			
+			<p>
+			The West of Ireland and in particular County Galway is one of the most unique parts of Ireland for visitors to explore. With barren fields, rugged coastline, stone-walled fields, stark mountain ranges, and vast boglands, the West has some of the richest scenic beauty and natural attractions in Ireland.
+			</p>
+			
+			<p>
+			With Galway City, a true Renaissance city as its hub, the West offers a diverse set of experiences for every visitor. From the sunsets over Galway Bay to the rocky shores of the Aran Islands, and the enchanting locales of "Quiet Man" country. Follow the trails of Connemara National Park, tour the great museums, watch craftspeople make hand-knit sweaters and other traditional crafts, sip a cup of tea beside a turf fire, or listen to the Irish language being spoken and sung. Galway provides glimpses of Ireland as it used to be, while also having a thriving urban centre at its heart. 
+			</p>
+			
+			<p>
+			Learn more about Galway. <a href="https://www.galwaytourism.ie/pabout-galway-ireland.html" target="_blank">here</a>.
+			</p>
+				
+		</section>
+		
+		<!-- image -->
+		<section>
+			<img alt="Picture of Galway Bay" src="../resources/img/galwaybay.jpg" class="galwaybay">
+		</section>
+        
+    </div>
+    
+    <div id="footer">
+        <ul>
+            <!-- footer buttons -->
+            <li><a href="https://www.tripadvisor.ie/" target="_blank">tripadvisor</a></li>
+			<li><a href="../rooms/reservation.html">Reservation</a></li>
+            <li><a href="../guesthouse/testimonials.html">Testimonials</a></li>
+            <li><a href="../guesthouse/location.html">Location</a></li>
+			<li><a href="../sitemap.html">Sitemap</a></li>
+            <li><a href="../guesthouse/contact_us.html">Contact Us</a></li>
+        </ul>
+        
+		<!-- copyright -->
+        </br>Copyright &copy; Galway Bay Guesthouse 2017 - All Rights Reserved</br>Noel McKeown LTD
+       
+    </div>
+
+</body>
+
+</html>

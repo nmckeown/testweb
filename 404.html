@@ -1,6 +1,6 @@
 <!--
-  @title:   index.html 
-  @desc:    The index page for the galway bay guesthouse website	 
+  @title:   404.html 
+  @desc:    The 404 page for the galway bay guesthouse website	 
   @author:  Noel McKeown 
   @email:   10361631@mydbs.ie
   @date:    Nov-2017		
@@ -21,6 +21,9 @@
 	
 	<!-- support IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	
+	<!-- support IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     
     <!-- meta info -->
     <meta name="description" content="Galway Bay GuestHouse is Luxurious Bed & Breakfast(B&B) in Galway.">
@@ -34,7 +37,7 @@
     <link rel="icon" type="image/png" href="./resources/img/favicon-16x16.png" sizes="16x16"/>
 	
 	<!-- include javascript -->
-	<script type="text/javascript" src="./resources/js/gbg_scripts.min.js"></script>
+	<script type="text/javascript" src="./resources/js/gbg_scripts.js"></script>
     
 </head>
 
@@ -45,7 +48,7 @@
         
 		<!-- header text and logo -->
 		<span>
-			<img alt="Galway Bay Logo" src="./resources/img/hooker.png">
+			<img src="./resources/img/hooker.png">
 		</span>
 
 		<!-- main heading -->
@@ -53,10 +56,10 @@
 
 		<!-- tripadvisor cert logos -->
 		<span>
-			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate1" alt="tripadvisor 2016 certificate" src="./resources/img/tripadvisor2016.png"></a>
+			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate1" src="./resources/img/tripadvisor2016-2.png"></a>
 		</span>
 		<span>
-			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate2" alt="tripadvisor 2015 certificate" src="./resources/img/tripadvisor2015.png"></a>
+			<a href="https://www.tripadvisor.ie/" target="_blank"><img class="certificate2" src="./resources/img/tripadvisor2015.png"></a>
 		</span>
 		
     </div>
@@ -67,11 +70,11 @@
             <ul>
                 <!-- navbar buttons -->
                 <li><a href="./index.html">Home</a></li>
-				<li><a href="./rooms/accomodation.html">Accomodation</a></li>
-				<li><a href="./guesthouse/services.html">Services</a></li>
-				<li><a href="./tours/about_galway.html">About Galway</a></li>
-				<li><a href="./tours/attractions.html">Attractions</a></li>
-				<li><a href="./tours/tour_bookings.html">Tour Bookings</a></li>
+				<li><a href="./accomodation.html">Accomodation</a></li>
+				<li><a href="./services.html">Services</a></li>
+				<li><a href="./about_galway.html">About Galway</a></li>
+				<li><a href="./attractions.html">Attractions</a></li>
+				<li><a href="./tour_bookings.html">Tour Bookings</a></li>
 			</ul>
 		</nav>  
     </div>
@@ -98,19 +101,18 @@
 					<!--  number of persons/rooms  -->
 					<div class="field">Persons: &nbsp;<input type="text" value="1"/>&nbsp; &nbsp; &nbsp; &nbsp; Rooms:&nbsp; <input type="text" value="1"/>
 					</div>
-									
-					<!-- submit reservation -->
-					<div class="reserve"><a href="./rooms/reservation.html" onclick="document.getElementById('reservation-form').submit()">Reserve</a>
-					</div>
 					
+					<!-- submit reservation -->
+					<div class="reserve"><a href="#" onclick="document.getElementById('reservation-form').submit()">Reserve</a>
+					</div>
+						
 				</fieldset>
 			</form>
 		</section>
-		
     </div>
     
     <!-- sidebar -->
-    <div class="sideleft sideleft-services">
+    <div class="sideleft">
         <h2>Room Services</h2>
 		<nav>
             <ul>
@@ -129,27 +131,14 @@
     <!-- main -->
     <div class="main">
         
-        <h1>Welcome</h1>
+        <h1>Something Went Wrong</h1>
         
         <!-- welcome paragraph -->
 		<section>
                             
             <p>
-            Gillian Moore's unique Bed & Breakfast is located in Galway city on the west coast of Ireland.</br>
-            This is a family run B&B, in operation for over twenty years and offers spectacular views over Galway Bay.</br>
+				That page cannot be displayed! Click <a href="./index.html">here</a> to go main.
             </p>
-            
-		</section>
-        
-		<!-- images -->
-		<section>
-            
-            <span>
-                <img alt="guesthouse room picture" src="./resources/img/room2.jpg" class="roompics">
-            </span>
-            <span>
-                <img alt="guesthouse towel picture" src="./resources/img/towels.jpg" class="roompics">
-            </span>
             
 		</section>
         
@@ -159,11 +148,10 @@
         <ul>
             <!-- footer buttons -->
             <li><a href="https://www.tripadvisor.ie/" target="_blank">tripadvisor</a></li>
-			<li><a href="./rooms/reservation.html">Reservation</a></li>
-            <li><a href="./guesthouse/testimonials.html">Testimonials</a></li>
-            <li><a href="./guesthouse/location.html">Location</a></li>
-			<li><a href="./sitemap.html">Sitemap</a></li>
-            <li><a href="./guesthouse/contact_us.html">Contact Us</a></li>
+			<li><a href="./reservation.html">Reservation</a></li>
+            <li><a href="./testimonials.html">Testimonials</a></li>
+            <li><a href="./location.html">Location</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
         </ul>
         
 		<!-- copyright -->

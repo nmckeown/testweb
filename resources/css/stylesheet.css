@@ -1,0 +1,688 @@
+/** 
+  @title:	stylesheet.css
+  @desc:	The style sheet for the galway bay guesthouse website		 
+  @author: 	Noel McKeown 
+  @email: 	10361631@mydbs.ie
+  @date:	Dec-2017	
+**/
+
+
+/* START - ipad landscape and bigger */
+@media screen and (min-width: 767px) {
+    
+    /* =============================== LAYOUT SECTION =============================== */
+    
+    /* body */
+    body {
+        background-color: #e1f5fe;
+        margin: 0px;
+        font-family: Verdana, Georgia, sans serif;
+        font-size: 14px;
+    }
+    
+    /* header */
+    #header {
+        background-color: #b3e5fc;
+        margin: 10px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    
+    #header img {
+        width: 70px;
+        height: 75px;
+        padding-left: 10px;
+        padding-top: 5px;
+        display: block;
+        vertical-align: bottom;
+        float: left;
+    }
+    
+    #header h3 {
+        margin: 0px;
+        font-size: 250%;
+        text-align: left;
+        color: #0091ea;
+        font-family: "Century Gothic","Gill Sans", Arial, sans serif;
+        padding-left: 10px;
+        float: left;
+                        
+        /* vertically align */
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    
+    #mainpics .certpics {
+        padding-right: 10px;
+        padding-top: 5px;
+        display: block;
+        vertical-align: bottom;
+    }
+    
+    
+    #header .certificate1 {
+        width: 70px;
+        height: 75px;
+        float: right;
+        margin-right: 1%;
+    }
+    
+    #header .certificate2 {
+        width: 65px;
+        height: 75px;
+        float: right;
+    }
+    
+    /* navbar */
+    #navbar ul {
+        padding: 5px;
+        list-style-type: none;
+        text-align: center;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #4fc3f7;
+    }
+    
+    #navbar ul li {
+        display: inline;
+    }
+    
+    #navbar ul li a {
+        text-decoration: none;
+        font-family: Arial;
+        padding: .2em 1em;
+        color: #fff;
+        background-color: #4fc3f7;
+    }
+    
+    #navbar ul li a:hover {
+        color: #4fc3f7;
+        background-color: #fff;
+    }
+    
+    /* main */
+    .main {
+        background-color: #b2ebf2;
+        margin-left: 300px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 100%;
+        height: 520px;
+		overflow: hidden; /* dont display if there is overflow */
+    }
+    
+    .main .mainpics {
+        display: inline-block;
+        float:right;
+        clear:left;
+    }
+    
+    .main .roompics {
+        width: 475px;
+        height: 350px;
+        margin-right: 1%;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+    
+    .main .galwaybay {
+        width: 700px;
+        height: 280px;
+    }
+    
+    /* sideright */
+    .sideright {
+        background-color: #b2ebf2;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 105%;
+        float: right;
+        width: 260px;
+    }
+    
+    /* sideright */
+    .sideleft {
+        background-color: #b2ebf2;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 90%;
+        float: left;
+        width: 260px;
+        clear:left;
+    }
+	
+	.sideleft-reservation {
+		height: 300px;
+    }
+	
+	.sideleft-services {
+		height:190px;
+    }
+    
+    .sideleft .reserve {
+        text-decoration: none;
+        font-family: Arial;
+        padding: .2em 1em;
+        color: white;
+        background-color: red;
+        border-radius: 2px;
+        text-align: center;
+        width: 125px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    
+    /* override anchor tag */
+    .sideleft .reserve a {
+        color: white;
+        font-size: small;
+        text-decoration: none;
+    }
+    
+    .sideleft .reserve:hover {
+    color: red;
+        background-color: #b71c1c;
+    }
+    
+    /* accomodation */
+    .accomContainer {
+        width: 100%;
+    }
+    
+    #accomodation * {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+    
+    #accomodation .roompics {
+        width: 200px;
+        height: 150px;
+        margin-right: 1%;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+		border-style: solid;
+		border-color: black;
+		border-width: 1px;
+    }
+    
+    .col-1, .col-2, .col-3
+	{
+        float:left;
+    }
+    #accomodation .col-1 
+	{
+		width:173px;
+		margin-right:45px;
+	}
+    #accomodation .col-2 
+	{
+		width:173px;
+		margin-right:45px;
+	}
+    #accomodation .col-3 
+	{
+		width:173px;
+		margin-right:45px;
+	}
+    #accomodation .col-4 
+	{
+		width:173px;
+	}
+    
+    #accomodation .list {
+        font-size:.91em;
+        padding:4px 0 15px 0;
+        width: 100%;
+    }
+    #accomodation .list dt 
+	{
+		font-weight:bold;
+		color:black;
+		margin-bottom:12px;
+		padding:0 0 0 4px;
+	}
+    #accomodation .list dd
+    {
+        border-bottom:1px solid #57473c;
+        padding:0 5px 7px 4px;
+        margin-bottom:4px;
+        line-height:1.45em;
+        width: 100%;
+    }
+    #accomodation .list dd span 
+	{
+		float:right;
+	}
+    #accomodation .list dd.alt 
+	{
+		border-bottom:none;
+	}
+    #accomodation .list dd.last 
+	{
+		font-weight:bold;
+		color:#c30000;
+		border-bottom:none;
+	}
+	
+	/* attractions */
+	
+    .attractionContainer {
+        width: 100%;
+    }
+    
+    #attraction * {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+    
+    #attraction .tourpics {
+        width: 200px;
+        height: 150px;
+        margin-right: 1%;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+		border-style: solid;
+		border-color: black;
+		border-width: 1px;
+    }
+	
+	#attraction .col-1 
+	{
+		width:173px;
+		margin-right:45px;
+	}
+    #attraction .col-2 
+	{
+		width:173px;
+		margin-right:45px;
+	}	
+    #attraction .col-3 
+	{
+		width:173px;
+		margin-right:45px;
+	}
+    #attraction .col-4 
+	{
+		width:173px;
+	}
+	#attraction .list {
+        font-size:.91em;
+        padding:4px 0 15px 0;
+        width: 100%;
+
+    }
+    #attraction .list dt 
+	{
+		font-weight:bold;
+		color:black;
+		margin-bottom:12px;
+		padding:0 0 0 4px
+	}
+    #attraction .list dd
+	{
+        border-bottom:1px solid #57473c;
+        padding:0 5px 7px 4px;
+        margin-bottom:4px;
+        line-height:1.45em;
+        width: 100%;
+    }
+    
+    /* testimonial */
+    #testimonial * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .indent {
+        padding:17px 0 20px 0;
+    }
+    
+    .commentList li {
+        width:100%;
+        overflow:hidden;
+        background:none;
+        font-size:.91em;
+    }
+    .commentList img {
+        float:left;
+        margin:0 13px 0 0;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        padding-bottom:10px;
+        vertical-align:middle;
+    }
+    .commentList p {
+        font-size: smaller;
+    }
+    
+    /* footer */
+    #footer {
+        background-color: #b3e5fc;
+        margin: 10px;
+        height: 60px;
+        clear:both;
+        border-radius: 5px;
+        color: darkblue;
+        text-align: center;
+        padding: 15px;
+        font-size: 90%;
+    }
+    
+    #footer ul {
+        padding: 0px;
+        list-style-type: none;
+        text-align: center;
+        margin: 2px;
+        border-radius: 5px;
+    }
+    
+    #footer ul li {
+        display: inline;
+    }
+    
+    #footer ul li a {
+        text-decoration: none;
+        font-family: Arial;
+        padding: .2em 1em;
+        color: #0091ea;
+        background-color: #b3e5fc;
+    }
+    
+    #footer ul li a:hover {
+        color: #4fc3f7;
+        background-color: #fff;
+    }
+    
+    /* =============================== HEADING SECTION =============================== */
+    
+    h1 {
+        font-size: 120%;
+        color: #0091ea;
+    }
+    
+    h2 {
+        font-size: 120%;
+        color: #0091ea;
+    }
+    
+    h3 {
+        margin: 0px;
+        font-size: 250%;
+        text-align: left;
+        /*color: #0091ea;*/
+        color: #fff;
+        font-family: "Century Gothic","Gill Sans", Arial, sans serif;
+        padding-left: 10px;
+        text-shadow: 2px 2px 4px #012C34;
+                    
+        /* vertically align */
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    h6 {
+        font-size:1em;
+    }
+    
+    /* =============================== MAP SECTION =============================== */
+    
+    #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+    }
+    
+    /* =============================== RESERVATION FORM =============================== */
+    #reservation-form 
+	{
+		font-size:.91em;
+		font-weight:bold;
+	}
+    #reservation-form fieldset 
+	{	
+		border:none;
+	}
+    #reservation-form .field
+	{
+        display:block;
+        height:55px;
+        padding-top: 10px;
+    }
+    #reservation-form label 
+	{
+		display:block;
+		padding-bottom:4px;
+	}
+    #reservation-form select 
+	{
+		border:1px solid #5d3825;
+		background:#bdbdbd;
+		color:black;
+	}
+    #reservation-form select.select1 {
+        width:45px;
+        margin-right:10px;
+        padding: 2px;
+    }
+    #reservation-form select.select2 {
+        width: 142px;
+        padding: 3px;
+    }
+    #reservation-form input
+    {
+        width:23px;
+        text-align:center;
+        border:1px solid #5d3825;
+        background:#bdbdbd;
+        color:black;
+        padding: 3px;
+    }
+    #reservation-form input[type=date]
+    {
+        width: 142px;
+        padding: 3px;
+        resize: none;
+    }
+    #reservation-form .button
+    {
+        font-size:1em
+    }
+    
+    /* =============================== CONTACT FORM =============================== */
+    
+    /* contact form inputs, select and textarea */
+    #contact-form input[type=text],input[type=date],input[type=email], select, textarea {
+        width: 100%; 
+        padding: 8px;  
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical;
+    }
+    
+    #contact-form input[type=date] {
+        width: 150px; 
+    }
+    
+    /* contact form submit button */
+    #contact-form input[type=submit] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    /* contact form submit button hover */
+    #contact-form input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    /* contact form container */
+    .formContainer {
+        width: 75%;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+	
+	/* =============================== TESTIMONIAL FORM =============================== */
+    
+    /* testimonial form inputs, select and textarea */
+    #testimonial-form input[type=text],input[type=date],input[type=email], select, textarea {
+        width: 100%; 
+        padding: 8px;  
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical;
+    }
+        
+    /* testimonial form submit button */
+    #testimonial-form input[type=submit] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    /* testimonial form submit button hover */
+    #testimonial-form input[type=submit]:hover {
+        background-color: #45a049;
+    }
+	
+	/* =============================== BOOKING FORM =============================== */
+    
+    /* booking form inputs, select and textarea */
+    #booking-form input[type=text],input[type=date],input[type=email], select, textarea {
+        width: 100%; 
+        padding: 8px;  
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical;
+    }
+    
+    #booking-form input[type=date] {
+        width: 150px; 
+    }
+    
+    /* booking form submit button */
+    #booking-form input[type=submit] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    /* booking form submit button hover */
+    #booking-form input[type=submit]:hover {
+        background-color: #45a049;
+    }
+	
+	/* =============================== ROOM FORM =============================== */
+    
+    /* reservation form inputs, select and textarea */
+    #room-reservation-form input[type=text],input[type=date],input[type=email], select, textarea {
+        width: 100%; 
+        padding: 8px;  
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; 
+        box-sizing: border-box; 
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical;
+    }
+    
+    #room-reservation-form  select {
+        width: 180px; 
+    }
+	
+	 #room-reservation-form  input[type=date] {
+        width: 150px; 
+    }
+    
+    
+    /* reservation form submit button */
+    #room-reservation-form  input[type=submit] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    /* reservation form submit button hover */
+    #room-reservation-form input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    
+    /* =============================== BUTTON SECTION =============================== */
+    
+    .submitComment {
+        text-decoration: none;
+        font-family: Arial;
+        padding: .2em 1em;
+        color: white;
+        background-color: red;
+        border-radius: 2px;
+        text-align: center;
+        width: 125px;
+        border: 1px solid black;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    /* override anchor tag */
+    .submitComment a {
+        color: white;
+        font-size: small;
+        text-decoration: none;
+    }
+    .submitComment:hover {
+    color: red;
+        background-color: #b71c1c;
+    }
+
+}
+/* END - ipad landscape and bigger */
+
+/* START - mobile phone */
+@media only screen and (max-width: 768px) {
+
+}
+/* END - mobile phone */
